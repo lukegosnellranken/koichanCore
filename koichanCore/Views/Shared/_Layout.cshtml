@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - KoiChan</title>
+    <environment names="Development">
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/css/site.css" rel="stylesheet" />
+    </environment>
+</head>
+<body>
+
+    <div id="homeHeader">
+        <p>Welcome to KoiChan.</p>
+        <p id="homeSubtitle">v. 1.0</p>
+    </div>
+
+    <div id="mainContentArea">
+        <div id="mainContent">
+            <aside id="homeAside">
+                <p class="asideTitle">Boards</p>
+                <ul>
+                    <li>@Html.ActionLink("WebDev - /wd/", "WebDev", "Home", null, new { @class = "page-scroll" })</li>
+                    <li>@Html.ActionLink("Hardware - /hw/", "Hardware", "Home", null, new { @class = "page-scroll" })</li>
+                    <li>@Html.ActionLink("Software - /sw/", "Software", "Home", null, new { @class = "page-scroll" })</li>
+                    <li>@Html.ActionLink("Tech Culture - /tc/", "TechCulture", "Home", null, new { @class = "page-scroll" })</li>
+                    <li>Board Template</li>
+                    <li>Board Template</li>
+                </ul>
+
+                <p class="asideTitle">Lurking</p>
+                <ul>
+                    <li>Lurk 1</li>
+                    <li>Lurk 2</li>
+                    <li>Lurk 3</li>
+                    <li>Lurk 4</li>
+                    <li>Lurk 5</li>
+                    <li>Lurk 6</li>
+                </ul>
+            </aside>
+
+            <div id="homepageContainer">
+                <p class="currentBoardTitle">@Html.ViewBag.Title</p>
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p id="bottomLinks"><i>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "page-scroll" }) - @Html.ActionLink("Privacy", "Privacy", "Home", null, new { @class = "page-scroll" }) </i></p>
+    </div>
+
+    <section class="footer bg-dark" id="footer">
+        <p><i>KoiChan &copy; @DateTime.Now.Year by Luke Gosnell</i></p>
+    </section>
+
+    <environment names="Development">
+        <script src="~/wwwroot/js/site.js"></script>
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+    </environment>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿body {
+    background-color: mediumpurple;
+    color: whitesmoke;
+}
+
+#homeHeader {
+    color: whitesmoke;
+    font-family: fantasy;
+    text-align: center;
+    padding-top: 1em;
+    font-size: x-large;
+}
+
+.homeSubHeader{
+    text-decoration:underline;
+}
+
+#homeSubtitle {
+    font-family: monospace;
+    font-size: small;
+}
+
+#mainContentArea {
+    background-color: rgb(222, 226, 233);
+}
+
+#mainContent {
+    display: flex;
+    background-color: rgb(222, 226, 233);
+    margin: 2em 0em 0em 2em;
+    padding-top: 1.25em;
+}
+
+#homeAside {
+    width: 15%;
+    justify-content: center;
+    border: mintcream;
+    border-style: solid;
+    border-width: medium;
+    margin-right: 2em;
+    background-color: mintcream;
+    color: grey;
+    min-height: 45em;
+}
+
+    #homeAside ul li {
+        text-decoration: none;
+        list-style: none;
+        color: inherit;
+    }
+
+.asideTitle {
+    font-weight: bold;
+    padding-left: 2em;
+    background-color: rgb(163, 173, 184);
+    color: mintcream;
+}
+
+.currentBoardTitle {
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(163, 173, 184);
+    color: mintcream;
+}
+
+#homepageContainer {
+    width: 81.4%;
+    border: mintcream;
+    border-style: solid;
+    border-width: medium;
+    background-color: mintcream;
+    color: grey;
+}
+
+#bottomLinks {
+    background-color: rgb(222, 226, 233);
+    text-align: center;
+    margin: 0;
+}
+
+#footer {
+    text-align: center;
+}
