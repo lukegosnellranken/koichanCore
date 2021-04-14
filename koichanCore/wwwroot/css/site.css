@@ -3,6 +3,13 @@
     color: whitesmoke;
 }
 
+#userBanner {
+    background-color: rebeccapurple;
+    color: antiquewhite;
+    padding-top: .15em;
+    padding-bottom: .1em;
+}
+
 #homeHeader {
     color: whitesmoke;
     font-family: fantasy;
@@ -72,12 +79,25 @@
     color: grey;
 }
 
+a.pageLink{
+    color: inherit;
+}
+
+a.pageLinkBottom {
+    color: rgb(163, 173, 184);
+}
+
 #bottomLinks {
     background-color: rgb(222, 226, 233);
     text-align: center;
     margin: 0;
+    color: rgb(163, 173, 184);
 }
 
 #footer {
+    text-align: center;
+}
+
+.newThread{
     text-align: center;
 }

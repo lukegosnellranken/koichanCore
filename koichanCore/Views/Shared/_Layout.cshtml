@@ -11,6 +11,10 @@
 </head>
 <body>
 
+    <div id="userBanner">
+        <p>login   sign up</p>
+    </div>
+
     <div id="homeHeader">
         <p>Welcome to KoiChan.</p>
         <p id="homeSubtitle">v. 1.0</p>
@@ -21,10 +25,10 @@
             <aside id="homeAside">
                 <p class="asideTitle">Boards</p>
                 <ul>
-                    <li>@Html.ActionLink("WebDev - /wd/", "WebDev", "Home", null, new { @class = "page-scroll" })</li>
-                    <li>@Html.ActionLink("Hardware - /hw/", "Hardware", "Home", null, new { @class = "page-scroll" })</li>
-                    <li>@Html.ActionLink("Software - /sw/", "Software", "Home", null, new { @class = "page-scroll" })</li>
-                    <li>@Html.ActionLink("Tech Culture - /tc/", "TechCulture", "Home", null, new { @class = "page-scroll" })</li>
+                    <li><a class="page-scroll pageLink" asp-controller="Home" asp-action="WebDev">Fitness - /f/</a></li>
+                    <li><a class="page-scroll pageLink" asp-controller="Home" asp-action="Hardware">Spirit - /s/</a></li>
+                    <li><a class="page-scroll pageLink" asp-controller="Home" asp-action="Software">Politics - /p/</a></li>
+                    <li><a class="page-scroll pageLink" asp-controller="Home" asp-action="Techculture">Art - /a/</a></li>
                     <li>Board Template</li>
                     <li>Board Template</li>
                 </ul>
@@ -48,7 +52,7 @@
     </div>
 
     <div>
-        <p id="bottomLinks"><i>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "page-scroll" }) - @Html.ActionLink("Privacy", "Privacy", "Home", null, new { @class = "page-scroll" }) </i></p>
+        <p id="bottomLinks"><i>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "page-scroll pageLinkBottom" }) - @Html.ActionLink("Privacy", "Privacy", "Home", null, new { @class = "page-scroll pageLinkBottom" }) </i></p>
     </div>
 
     <section class="footer bg-dark" id="footer">
