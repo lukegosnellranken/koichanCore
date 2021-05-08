@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lukeg\\Desktop\\Extra Coding\\koichanCore\\koichanCore\\koichanCore.csproj": {}
+    "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\koichanCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lukeg\\Desktop\\Extra Coding\\koichanCore\\koichanCore\\koichanCore.csproj": {
+    "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\koichanCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lukeg\\Desktop\\Extra Coding\\koichanCore\\koichanCore\\koichanCore.csproj",
+        "projectUniqueName": "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\koichanCore.csproj",
         "projectName": "koichanCore",
-        "projectPath": "C:\\Users\\lukeg\\Desktop\\Extra Coding\\koichanCore\\koichanCore\\koichanCore.csproj",
+        "projectPath": "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\koichanCore.csproj",
         "packagesPath": "C:\\Users\\lukeg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lukeg\\Desktop\\Extra Coding\\koichanCore\\koichanCore\\obj\\",
+        "outputPath": "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,6 +43,24 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.5, )"
