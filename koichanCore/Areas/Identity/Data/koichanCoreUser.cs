@@ -9,7 +9,6 @@ namespace koichanCore.Areas.Identity.Data
     // Add profile data for application users by adding properties to the koichanCoreUser class
     public class koichanCoreUser : IdentityUser
     {
-        [PersonalData]
-        public string UserName { get; set; }
+        
     }
 }

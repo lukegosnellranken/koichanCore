@@ -20,7 +20,7 @@ namespace koichanCore.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("koichanCoreDBContextConnection")));
 
-                services.AddDefaultIdentity<koichanCoreUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                services.AddDefaultIdentity<koichanCoreUser>(options => options.SignIn.RequireConfirmedAccount = false)
                     .AddEntityFrameworkStores<koichanCoreDBContext>();
             });
         }
