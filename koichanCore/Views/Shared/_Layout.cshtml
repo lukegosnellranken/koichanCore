@@ -12,7 +12,8 @@
 <body>
 
     <div id="userBanner">
-        <p>login   sign up</p>
+        <p><a href="/identity/account/login">login</a> / <a href="/identity/account/register">register</a></p>
+        <button id="displayBtn">hide/show aside</button>
     </div>
 
     <div id="homeHeader">
@@ -64,5 +65,24 @@
         <script src="~/lib/jquery/dist/jquery.js"></script>
     </environment>
     @RenderSection("scripts", required: false)
+
+    <script src="..\..\wwwroot\js\layout.js"></script>
+
+    <script>
+        let displayBtn = document.getElementById("displayBtn");
+        displayBtn.onclick = function asideFunc() {
+            let ha = document.getElementById('homeAside');
+            let hpc = document.getElementById('homepageContainer');
+            if (ha.style.display === "none") {
+                ha.style.display = "block";
+                hpc.style.width = "81.4%";
+            } else {
+                ha.style.display = "none";
+                hpc.style.width = "98%";
+            }
+            console.log("example!")
+        }
+    </script>
+
 </body>
 </html>
