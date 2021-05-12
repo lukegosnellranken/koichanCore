@@ -53,5 +53,15 @@ namespace koichanCore.Controllers
         {
             return View();
         }
+
+        public ActionResult Login()
+        {
+            return View("~/Areas/Identity/Pages/Account/Login.cshtml");
+        }
+
+        public ActionResult Register()
+        {
+            return View("~/Areas/Identity/Pages/Account/Register.cshtml");
+        }
     }
 }

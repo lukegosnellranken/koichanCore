@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\koichanCore",
+    "\\koichanCore\\Areas\\Identity",
+    "\\koichanCore\\Areas\\Identity\\Pages",
+    "\\koichanCore\\Areas\\Identity\\Pages\\Account",
+    "\\koichanCore\\Controllers",
+    "\\koichanCore\\Views",
+    "\\koichanCore\\Views\\Home",
+    "\\koichanCore\\Views\\Shared"
+  ],
+  "SelectedNode": "\\koichanCore\\Controllers\\HomeController.cs",
+  "PreviewInSolutionExplorer": false
+}
