@@ -98,6 +98,25 @@ a.pageLinkBottom {
     text-align: center;
 }
 
+#userBanner {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+#displayP {
+    padding-left: 10%;
+    margin-top: .5em;
+}
+
+#displayP:hover {
+    text-decoration: underline;
+}
+
+#logRegLinks {
+    margin-top: .5em;
+}
+
 .newThread{
     text-align: center;
 }

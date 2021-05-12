@@ -11,14 +11,23 @@
 </head>
 <body>
 
-    <div id="userBanner">
+    @*<div id="userBanner">
         <p><a href="/identity/account/login">login</a> / <a href="/identity/account/register">register</a></p>
         <button id="displayBtn">hide/show aside</button>
+    </div>*@
+
+    <div class="row" id="userBanner">
+        <div class="col-10">
+            <p id="displayP">hide panel</p>
+        </div>
+        <div class="col-2">
+            <p id="logRegLinks"><a class="pageLink" href="/identity/account/login">login</a> / <a class="pageLink" href="/identity/account/register">register</a></p>
+        </div>
     </div>
 
     <div id="homeHeader">
         <p>Welcome to KoiChan.</p>
-        <p id="homeSubtitle">v. 1.0</p>
+        <p id="homeSubtitle">self-improvement community</p>
     </div>
 
     <div id="mainContentArea">
@@ -69,16 +78,18 @@
     <script src="..\..\wwwroot\js\layout.js"></script>
 
     <script>
-        let displayBtn = document.getElementById("displayBtn");
-        displayBtn.onclick = function asideFunc() {
+        let displayP = document.getElementById("displayP");
+        displayP.onclick = function asideFunc() {
             let ha = document.getElementById('homeAside');
             let hpc = document.getElementById('homepageContainer');
             if (ha.style.display === "none") {
                 ha.style.display = "block";
                 hpc.style.width = "81.4%";
+                displayP.innerHTML = displayP.innerHTML.replace("show panel", "hide panel");
             } else {
                 ha.style.display = "none";
                 hpc.style.width = "98%";
+                displayP.innerHTML = displayP.innerHTML.replace("hide panel", "show panel");
             }
             console.log("example!")
         }
