@@ -11,17 +11,12 @@
 </head>
 <body>
 
-    @*<div id="userBanner">
-        <p><a href="/identity/account/login">login</a> / <a href="/identity/account/register">register</a></p>
-        <button id="displayBtn">hide/show aside</button>
-    </div>*@
-
     <div class="row" id="userBanner">
         <div class="col-10">
             <p id="displayP">hide panel</p>
         </div>
         <div class="col-2">
-            <p id="logRegLinks"><a class="pageLink" href="/identity/account/login">login</a> / <a class="pageLink" href="/identity/account/register">register</a></p>
+            <partial name="_LoginPartial.cshtml" />
         </div>
     </div>
 
