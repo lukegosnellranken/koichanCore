@@ -346,3 +346,8 @@ C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\s
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\koichanCore.dll
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\koichanCore.pdb
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\koichanCore.genruntimeconfig.cache
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Avatar.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
