@@ -8,6 +8,11 @@
         <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
         <link href="~/css/site.css" rel="stylesheet" />
     </environment>
+    @using Microsoft.AspNetCore.Identity
+@using koichanCore.Areas.Identity.Data
+
+    @inject SignInManager<koichanCoreUser> SignInManager
+    @inject UserManager<koichanCoreUser> UserManager
 </head>
 <body>
 
@@ -28,6 +33,13 @@
     <div id="mainContentArea">
         <div id="mainContent">
             <aside id="homeAside">
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <p class="asideTitle">Post</p>
+                    <ul>
+                        <li><a class="page-scroll pageLink" asp-controller="Home" asp-action="MakePost">Make a Post</a></li>
+                    </ul>
+                }
                 <p class="asideTitle">Boards</p>
                 <ul>
                     <li><a class="page-scroll pageLink" asp-controller="Home" asp-action="WebDev">Fitness - /f/</a></li>

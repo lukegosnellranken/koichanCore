@@ -53,5 +53,10 @@ namespace koichanCore.Controllers
         {
             return View();
         }
+
+        public ActionResult MakePost()
+        {
+            return View();
+        }
     }
 }

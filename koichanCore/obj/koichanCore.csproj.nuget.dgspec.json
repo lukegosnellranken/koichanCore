@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\koichanCore.csproj": {}
+    "C:\\Users\\ZBook\\Source\\Repos\\koichanCoreTrue\\koichanCore\\koichanCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\koichanCore.csproj": {
+    "C:\\Users\\ZBook\\Source\\Repos\\koichanCoreTrue\\koichanCore\\koichanCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\koichanCore.csproj",
+        "projectUniqueName": "C:\\Users\\ZBook\\Source\\Repos\\koichanCoreTrue\\koichanCore\\koichanCore.csproj",
         "projectName": "koichanCore",
-        "projectPath": "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\koichanCore.csproj",
-        "packagesPath": "C:\\Users\\lukeg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lukeg\\Desktop\\KoiChan\\koichanCore\\koichanCore\\obj\\",
+        "projectPath": "C:\\Users\\ZBook\\Source\\Repos\\koichanCoreTrue\\koichanCore\\koichanCore.csproj",
+        "packagesPath": "C:\\Users\\ZBook\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ZBook\\Source\\Repos\\koichanCoreTrue\\koichanCore\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lukeg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ZBook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -84,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
