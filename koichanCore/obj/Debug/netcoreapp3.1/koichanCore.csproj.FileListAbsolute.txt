@@ -174,9 +174,6 @@ C:\Users\lukeg\Desktop\Extra Coding\koichanCore\koichanCore\obj\Debug\netcoreapp
 C:\Users\lukeg\Desktop\Extra Coding\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
-C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\bin\Debug\netcoreapp3.1\koichanCore.StaticWebAssets.xml
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\bin\Debug\netcoreapp3.1\koichanCore.exe
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\bin\Debug\netcoreapp3.1\koichanCore.deps.json
@@ -351,3 +348,9 @@ C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\R
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Avatar.cshtml.g.cs
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\scopedcss\bundle\koichanCore.styles.css
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Create.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Delete.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Details.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Edit.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Index.cshtml.g.cs

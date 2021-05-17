@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using koichanCore.Data;
+using koichanCore.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,6 +28,9 @@ namespace koichanCore
         {
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddDbContext<AvatarsDBContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("koichanCoreDBContextConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
