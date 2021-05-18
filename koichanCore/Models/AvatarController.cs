@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,10 +13,12 @@ namespace koichanCore.Models
     public class AvatarController : Controller
     {
         private readonly AvatarsDBContext _context;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-        public AvatarController(AvatarsDBContext context)
+        public AvatarController(AvatarsDBContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            this._hostEnvironment = hostEnvironment;
         }
 
         // GET: Avatar
@@ -52,10 +56,22 @@ namespace koichanCore.Models
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ImageID,Title,ImageName")] AvatarsModel avatarsModel)
+        public async Task<IActionResult> Create([Bind("ImageID,Title,ImageFile")] AvatarsModel avatarsModel)
         {
             if (ModelState.IsValid)
             {
+                // Save image to wwwroot/avatar
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                string fileName = Path.GetFileNameWithoutExtension(avatarsModel.ImageFile.FileName);
+                string extension = Path.GetExtension(avatarsModel.ImageFile.FileName);
+                avatarsModel.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                string path = Path.Combine(wwwRootPath + "/avatar/", fileName);
+                using (var fileStream = new FileStream(path,FileMode.Create))
+                {
+                    await avatarsModel.ImageFile.CopyToAsync(fileStream);
+                }
+                
+                //Insert record
                 _context.Add(avatarsModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
