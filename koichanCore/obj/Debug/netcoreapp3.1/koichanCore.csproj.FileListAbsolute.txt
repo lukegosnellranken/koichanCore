@@ -349,8 +349,4 @@ C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\R
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Avatar.cshtml.g.cs
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
 C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\scopedcss\bundle\koichanCore.styles.css
-C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Create.cshtml.g.cs
-C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Delete.cshtml.g.cs
-C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Details.cshtml.g.cs
-C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Edit.cshtml.g.cs
-C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Avatar\Index.cshtml.g.cs
+C:\Users\lukeg\Desktop\KoiChan\koichanCore\koichanCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AvatarUpdated.cshtml.g.cs

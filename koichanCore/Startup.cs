@@ -60,6 +60,11 @@ namespace koichanCore
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                    name: "avatarRoute",
+                    pattern: "~/Areas/Identity/Pages/Account/Manage/{action=Avatar}/{id?}");
+
                 endpoints.MapRazorPages();
             });
         }

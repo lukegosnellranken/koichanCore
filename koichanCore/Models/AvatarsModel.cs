@@ -14,8 +14,8 @@ namespace koichanCore.Models
         [Key]
         public int ImageID { get; set; }
 
-        [Column(TypeName = "nvarchar(50)")]
-        public string Title {get; set;}
+        //[Column(TypeName = "nvarchar(50)")]
+        //public string Title {get; set;}
 
         [Column(TypeName = "nvarchar(100)")]
         [DisplayName("Image Name")]

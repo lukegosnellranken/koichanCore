@@ -27,6 +27,12 @@ namespace koichanCore.Models
             return View(await _context.AspNetUserAvatars.ToListAsync());
         }
 
+        // Return to Avatar view after submitting
+        public ActionResult ReturnAvatar()
+        {
+            return View("~/Areas/Identity/Pages/Account/Manage/Avatar.cshtml");
+        }
+
         // GET: Avatar/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -46,17 +52,18 @@ namespace koichanCore.Models
         }
 
         // GET: Avatar/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+        //[Route("~/Identity/Account/Manage/Avatar.cshtml")]
+        //public IActionResult Create()
+        //{
+        //    return View();
+        //}
 
-        // POST: Avatar/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        //POST: Avatar/Create
+        //To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ImageID,Title,ImageFile")] AvatarsModel avatarsModel)
+        public async Task<IActionResult> SetAvatar([Bind("ImageID,Title,ImageFile")] AvatarsModel avatarsModel)
         {
             if (ModelState.IsValid)
             {
@@ -66,17 +73,21 @@ namespace koichanCore.Models
                 string extension = Path.GetExtension(avatarsModel.ImageFile.FileName);
                 avatarsModel.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
                 string path = Path.Combine(wwwRootPath + "/avatar/", fileName);
-                using (var fileStream = new FileStream(path,FileMode.Create))
+                using (var fileStream = new FileStream(path, FileMode.Create))
                 {
                     await avatarsModel.ImageFile.CopyToAsync(fileStream);
                 }
-                
+
                 //Insert record
                 _context.Add(avatarsModel);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                //return RedirectToAction(nameof(ReturnAvatar));
+                //return View("~/Areas/Identity/Pages/Account/Manage/Avatar.cshtml");
             }
-            return View(avatarsModel);
+            //return View(avatarsModel);
+            return RedirectToAction(nameof(Index));
+            //return ReturnAvatar();
+            //return View("~/Areas/Identity/Pages/Account/Manage/Avatar.cshtml");
         }
 
         // GET: Avatar/Edit/5
